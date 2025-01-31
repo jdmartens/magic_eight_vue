@@ -22,7 +22,8 @@ const getAnswer = async (type: string) => {
     return
   }
 
-  const url = `https://wlqzjnzakh.execute-api.us-east-2.amazonaws.com/dev/${type}?question=${encodeURIComponent(question.value)}`
+  const baseUrl = import.meta.env.VITE_API_BASE_URL
+  const url = `${baseUrl}/${type}?question=${encodeURIComponent(question.value)}`
   try {
     const response = await fetch(url)
     const data = await response.json()
