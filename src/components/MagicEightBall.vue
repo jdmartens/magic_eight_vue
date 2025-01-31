@@ -23,12 +23,10 @@ const getAnswer = async (type: string) => {
   }
 
   const url = `https://wlqzjnzakh.execute-api.us-east-2.amazonaws.com/dev/${type}?question=${encodeURIComponent(question.value)}`
-  console.log('the url iss', url)
   try {
     const response = await fetch(url)
-    console.log('the response is', response)
     const data = await response.json()
-    // answer.value = data.answer
+    answer.value = data.answer
   } catch (error) {
     answer.value = 'Error fetching answer. Please try again.'
   }
