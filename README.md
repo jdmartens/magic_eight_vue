@@ -2,13 +2,13 @@
 
 This is a Magic Eight Ball application built with Vue.js. The application allows users to ask questions and receive answers in either a classic or sassy style. The backend API is hosted on AWS using Lambda and API Gateway.
 
-# Features
+## Features
 
 - Ask questions and get answers in two styles: Classic and Sassy
 - Responsive design
 - Hosted on AWS using ECS and ALB
 
-# Prerequisites
+### Prerequisites
 
 - Node.js (version 16 or later)
 - npm or yarn
