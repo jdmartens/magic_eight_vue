@@ -4,7 +4,7 @@
     <input v-model="question" placeholder="Ask your question..." />
     <div class="buttons">
       <button @click="getAnswer('classic')">Classic</button>
-      <button @click="getAnswer('sassy')">Sassy</button>
+      <button @click="getAnswer('sassy')">Spicy</button>
     </div>
     <p v-if="answer">{{ answer }}</p>
   </div>
